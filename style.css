@@ -113,9 +113,17 @@ header {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100px 200px;
+    grid-template-areas: 
+    "input1 input2"
+    "textarea textarea";
+    gap: 10px;
     width: 85%;
     margin: 30px auto;
-   /* max-width: 600px;*/
+   max-width: 600px;
+}
+
+.textarea {
+    grid-area: textarea;
 }
 
 label {
@@ -142,4 +150,41 @@ textarea:focus {
 textarea {
     resize: none;
     height: 180px;
+}
+
+/***************************footer***************************/
+footer {
+    padding: 70px 0 90px;
+    position: relative;
+}
+footer:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.082);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+footer a {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
 }
