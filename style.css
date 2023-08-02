@@ -188,3 +188,33 @@ footer a {
     align-items: center;
     transition: 0.3s;
 }
+
+/***************************media queries***************************/
+
+@media screen and (max-width: 650px) { 
+    header,
+    .section-1,
+    .section-2 {
+        grid-template-columns: 100%;
+    }
+    header {
+        height: auto;
+    }
+    header .img-banner {
+        height: 50vh;
+        margin-top: 30px;
+    }
+    .container {
+        padding: 15px;
+    }
+    footer ul {
+        min-width: 200px;
+    }
+    footer a {
+        width: 24px;
+        height: 24px;
+    }
+    footer i {
+        font-size: 0.7rem;
+    }
+}
